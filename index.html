@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Bhinneka Quipper!</title>
+
+    <style>
+      .hero-section {
+        position: relative;
+      }
+
+      .hero-img {
+        max-width: 100%;
+        width: 45%;
+        position: absolute;
+        bottom: 4%;
+        right: 4%;
+      }
+
+      .text-hero {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+      }
+
+      .text-hero h1 {
+       max-width: 50%;
+      }
+
+      .testimoni-wrap {
+        padding: 6em 0 4em 0;
+        background: #F7FCFF;
+        background: -webkit-linear-gradient(top, #F7FCFF, #D3E9F9);
+        background: -moz-linear-gradient(top, #F7FCFF, #D3E9F9);
+        background: linear-gradient(to bottom, #F7FCFF, #D3E9F9);
+      }
+
+      .rounded-image {
+        border-radius: 10px;
+        height:150px;
+        width: 300px;
+        object-fit: cover;
+      }
+
+      .pill-button {
+        
+        padding: 10px 25px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 1em;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+
+      .active-pill {
+        background-color: rgb(34, 69, 226);
+        border: none;
+        color: white;
+      }
+
+      .active-pill-purple {
+        background-color: #fff;
+        border: none;
+        color: #756bdc;
+      }
+
+      .pill-blue {
+        background-color: #fff;
+        border: 2px solid rgb(34, 69, 226);
+        color: rgb(34, 69, 226);
+      }
+
+      .pill-white {
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+      }
+
+      .strategy-wrap {
+        background-color: #D3E9F9;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4em 0 0 3em;
+        position: relative;
+      }
+
+      .strategy-1 {
+        border-radius: 6px 6px 0 0;
+      }
+
+      .strategy-2 {
+        border-radius: 0 0 6px 6px;
+        box-shadow: 0 -4px 2px rgb(17, 17, 17, 0.1);
+      }
+
+      .strategy-wrap p {
+        max-width: 75%;
+      }
+
+      .circle-step {
+        height: 90px;
+        width: 90px;
+        background-color: rgb(241, 228, 105);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+      }
+
+      .position-step-1 {
+        position: absolute;
+        top: 30%;
+        left: -4%;
+      }
+
+      .position-step-2 {
+        position: absolute;
+        top: 30%;
+        right: -4%;
+      }
+
+      .testimoni-section {
+        background-color:  #756bdc;
+        padding: 2em 0;
+      }
+
+      .testimoni-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 2em;
+      }
+
+      .section-free-cta {
+        background-color: #0f56b2;
+      }
+
+      .circle-number {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        border: 2px solid #fff;
+        color: #fff;
+        margin-bottom: 0;
+        margin-right: .5em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/bhinneka-logo.svg" alt="" width="200" height="30" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Product
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Paket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Super Teacher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">SBMPTN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Blog</a>
+            </li>
+          </ul>
+          <button class="btn btn-warning" type="button">Masuk</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <img src="/header_wave.png" class="img-fluid" alt="header-wave">
+      <div class="text-hero">
+        <h1 class="text-white">Bimbel Online dengan kualitas terbaik, bikin percaya diri raih prestasi!</h1>
+        <div>
+          <button type="button" class="btn btn-warning">Coba Gratis</button>
+          <button type="button" class="btn btn-light">Cek Paket</button>
+        </div>
+      </div>
+      <img src="/header.png" class="hero-img" alt="header-hero">
+    </section>
+
+    <section class="testimoni-wrap mb-5">
+      <h2 class="text-center">Dipercaya oleh Indonesia</h2>
+      <div class="container-xxl mt-4">
+        <div class="row gx-5">
+          <div class="col-12 col-md-3 text-center">
+            <img src="/news_1.jpeg" class="img-fluid rounded-image" alt="news-1">
+            <h5 class="mt-3">Jokowi arahkan murid belajar lewat aplikasi, salah satunya Bhinneka Edu</h5>
+          </div>
+          <div class="col-12 col-md-3 text-center">
+            <img src="/news_2.jpeg" class="img-fluid rounded-image" alt="news-1">
+            <h5 class="mt-3">Mendikbud apresiasi dukungan perusahaan pembelajaran daring</h5>
+          </div>
+          <div class="col-12 col-md-3 text-center">
+            <img src="/news_3.jpeg" class="rounded-image" alt="news-1">
+            <h5 class="mt-3">58% pengguna Quipper berhasil lolos UTBK SBMPTN 2020</h5>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="mt-5 mb-4">
+      <h2 class="text-center mb-5">Yuk, kenalan dengan fitur-fitur unik di Bhinneka Edu!</h2>
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-12 col-md-6">
+            <img src="/feature_0.png" class="img-fluid" alt="feature-0">
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <h4 class="w-50">Cara SUPER dari Super Teacher</h4>
+            <p class="w-50">Pahami konsep lebih mudah dengan Solusi Quipper (SUPER) dari Super Teacher favoritmu!</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <h4 class="w-50">Materi Lengkap dengan Kualitas Terbaik</h4>
+            <p class="w-50">Belajar jadi semangat dengan video animasi, latihan soal HOTS & materi sesuai dengan kurikulum nasional.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="/feature_1.png" class="img-fluid" alt="feature-0">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-12 col-md-6">
+            <img src="/feature_2.png" class="img-fluid" alt="feature-0">
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <h4 class="w-50">Belajar Interaktif dengan Tutor & Coach Pribadi</h4>
+            <p class="w-50">Dapatkan dukungan penuh lewat fitur Tanya Tutor & Bimbingan Online dari Masterclass.</p>
+            <a href="#"><b>Info Lebih Lanjut ></b></a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <h4 class="w-50">Siap Hadap Ujian</h4>
+            <p class="w-50">Materi Intensif UTBK dan tryout online (sistem IRT) bantu kamu dapat nilai bagus saat ujian.</p>
+            <a href="#"><b>Info Lebih Lanjut ></b></a>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="/feature_3.png" class="img-fluid" alt="feature-0">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn-strategy mt-5 mb-5">
+      <h2 class="text-center mb-4">Strategi Belajar dengan Bhinneka Edu</h2>
+      <div class="text-center mb-5">
+        <button class="pill-button active-pill" type="button">Kelas 12</button>
+        <button class="pill-button pill-blue" type="button">Kelas 11</button>
+        <button class="pill-button pill-blue" type="button">Kelas 10</button>
+        <button class="pill-button pill-blue" type="button">Kelas 9</button>
+        <button class="pill-button pill-blue" type="button">Alumni</button>
+      </div>
+   
+      <div class="strategy-wrap strategy-1">
+        <div class="circle-step position-step-1">CARA 1</div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4>Ingin masuk PTN impian?</h4>
+              <p>Siswa dapat memaksimalkan persiapan menuju UTBK SBMPTN dengan <b>Paket Intensif UTBK SBMPTN.</b></b></p>
+              <p>Dapatkan ribuan video tambahan khusus dan Tryout Online gratis dengan sistem IRT untuk persiapan yang lebih optimal</p>
+            </div>
+            <div class="col">
+              <img src="/intensive.png" class="img-fluid" alt="intensive">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="strategy-wrap strategy-2">
+        <div class="circle-step position-step-2">CARA 2</div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="/coaching.png" class="img-fluid" alt="intensive">
+            </div>
+            <div class="col">
+              <h4>Butuh bantuan tambahan?</h4>
+              <p>Dengan fitur Masterclass, siswa bisa <b>tanya jawab dengan Tutor</b> jika kesulitan saat mengerjakan tugas.</p>
+              <p>Untuk menambah motivasi belajar, siswa juga dapat <b>diskusi dengan Coach</b> mengenai rencana perguruan tinggi dan menyusun Rencana Belajar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimoni-section">
+      <h2 class="text-center text-white">Cerita Pengguna Bhinneka Edu</h2>
+      <div class="text-center mt-4 mb-5">
+        <button class="pill-button pill-white" type="button">Alumni</button>
+        <button class="pill-button pill-white" type="button">Pengguna</button>
+        <button class="pill-button active-pill-purple" type="button">Orang Tua</button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="testimoni-box">
+              <p>Quipper sangat membantu belajar anak, karena orang tua tidak selalu paham materi yang dipelajari anak.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="testimoni-box">
+              <p>Quipper sangat membantu belajar anak, karena orang tua tidak selalu paham materi yang dipelajari anak.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="testimoni-box">
+              <p>Quipper sangat membantu belajar anak, karena orang tua tidak selalu paham materi yang dipelajari anak.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button type="button" class="btn btn-warning">Coba Gratis</button>
+      </div>
+    </section>
+
+    <section class="section-free-cta mb-5">
+      <h2 class="text-center text-white pt-5 pb-5">Yuk, Coba Gratis Bhinneka Edu Video!</h2>
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-3">
+            <img src="/FreeTrial-01.png" class="img-fluid" alt="free-trial">
+          </div>
+          <div class="col-9">
+            <div class="d-flex align-items-center">
+              <p class="circle-number">1</p>
+              <h5 class="mb-0 text-white">Buat akun gratis di Bhinneka Edu Video</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
